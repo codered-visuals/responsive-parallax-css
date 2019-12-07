@@ -1,0 +1,84 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+h1 {
+    letter-spacing: -15px;
+    font-family: "hanson";
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 180px;
+    font-weight: 800;
+    line-height: 200px;
+}
+
+.container {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.contentcontainer {
+    position: relative;
+    display: block;
+    background-color: white;
+    z-index: 1;
+}
+
+.content {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 75px 0;
+}
+
+p {
+    margin: 75px 0;
+    padding: 20px;
+}
+
+.parallaxcontainer {
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(-1px) scale(2);
+    background: url("/img/1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.parallaxcontainer2 {
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(-1px) scale(2);
+    background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: 10px;
+        letter-spacing: 0.1px;
+    }
+
+
+}
